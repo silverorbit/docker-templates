@@ -6,7 +6,7 @@ Initial Docker templates for our Devs
 1. Install Docker and Docker compose see references.
 2. On subfolder ex. docker-demo
 
-    Run: docker-compose up 
+    Run: ```docker-compose up```
  
 ## 
 Reference:
