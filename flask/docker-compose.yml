@@ -3,7 +3,12 @@ services:
     app:
         build: . 
         image: so_flaskapp:1.0.0
-        restart: always
+        environment:
+        - PATH=/home/flaskuser/.local/bin
+        entrypoint:
+        - flask
+        - run
+        - '--host=0.0.0.0'
         volumes:
         - .:/home/flaskuser/app
         ports:
