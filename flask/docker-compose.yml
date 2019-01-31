@@ -3,6 +3,7 @@ services:
     app:
         build: . 
         image: so_flaskapp:1.0.0
+        restart: always
         environment:
         - PATH=/home/flaskuser/.local/bin
         entrypoint:
