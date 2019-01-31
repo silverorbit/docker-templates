@@ -1,0 +1,10 @@
+version: '2'
+services:
+    app:
+        build: . 
+        image: so_flaskapp:1.0.0
+        restart: always
+        volumes:
+        - .:/home/flaskuser/app
+        ports:
+        - "5000:5000"
